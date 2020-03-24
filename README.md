@@ -117,7 +117,7 @@ electron-react-typescript-base-proj/
 
 ## Author
 
-[Saeed Heidari](https://github.com/espitman) [@Devtography](https://github.com/espitman)
+[Saeed Heidari](https://github.com/espitman) 
 
 ## License
 Electron React TypeScript Webpack Kit is open source software 
