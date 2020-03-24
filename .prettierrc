@@ -3,6 +3,5 @@
   "tabWidth": 2,
   "indent": 2,
   "semi": false,
-  "singleQuote": true,
-  "jsxSingleQuote": false
+  "singleQuote": true
 }
