@@ -39,12 +39,6 @@
         "@utils"
       ]
     ],
-    "no-import-side-effect": [
-      true,
-      {
-        "ignore-module": "(\\.css)$"
-      }
-    ],
     "no-increment-decrement": ["allow-for-loops"],
     "rulesDirectory": [
       "node_modules/tslint-microsoft-contrib"
