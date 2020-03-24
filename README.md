@@ -1,14 +1,11 @@
-# Electron-React-TypeScript-Webpack-Boilerplate
-Pre-configured Electron.js + React.js + TypeScript boilerplate with 
+# Electron-React-TypeScript-Webpack-Kit
+Pre-configured Electron.js + React.js + TypeScript Kit with 
 Webpack v4 & linters config predefined.
-
-This boilerplate currently works on macOS and Windows. If something doesn't 
-work, please [file and issue](https://github.com/Devtography/electron-react-typescript-webpack-boilerplate/issues/new).
 
 ## Getting started
 ```sh
 // execute
-git clone https://github.com/iamWing/electron-react-typescript-base-proj.git
+git clone https://github.com/espitman/electron-typescript-kit.git
 ```
 
 ```json
@@ -33,7 +30,7 @@ git clone https://github.com/iamWing/electron-react-typescript-base-proj.git
 
 Then install all the `node_modules` needed by executing the following command:
 ```sh
-cd folder-containing-the-cloned-boilerplate
+cd folder-containing-the-cloned-Kit
 npm install
 ```
 
@@ -50,7 +47,7 @@ npm start
 ```
 
 ## Building the installer for your Electron app
-The boilerplate is currently configured to package & build the installer of 
+The Kit is currently configured to package & build the installer of 
 your app for macOS & Windows using `electron-builder`. 
 
 For macOS, execute:
@@ -92,19 +89,6 @@ Builds for Linux, armv71, and arm64 can also be configured by modifying the
 build scripts in `package.json`, but those aren't tested yet. For details, 
 please refer to [documents of `electron-builder`](https://www.electron.build/cli).
 
-## Known issues
-
-- `dmg` build action on `macOS Catalina (10.15)` fails due to Apple ditches 
-  support for 32-bit apps from `10.15` onwards (Don't worry, you are still 
-  building 64-bit apps, just some dependencies of the builder are still 32-bit).
-  Further details retailed to this issue can be found 
-  [here](https://github.com/electron-userland/electron-builder/issues/3990).  
-  Application installer built on `macOS` is now set to build `pkg` file 
-  instead of `dmg` as a workaround in the current version. The issue can be 
-  fixed by applying a major version upgrade of `electron-builder` to `21.2.0+` 
-  but it hasn't been tested on this boilerplate yet. This issue is planned to 
-  be addressed alongside with major version upgrades on other dependencies.
-
 ## Folder structure
 ```
 electron-react-typescript-base-proj/
@@ -114,9 +98,9 @@ electron-react-typescript-base-proj/
 | - public/             //- Global static assets
 | | - index.html
 | | - style.css
+| - app/             //- Backend modules for the Electron app
+| | - main.ts         //- Entry point of 'electron-main'
 | - src/
-| | - main/             //- Backend modules for the Electron app
-| | | - main.ts         //- Entry point of 'electron-main'
 | | - models/
 | | - renderer/         //- Frontend React components for the Electron app
 | | | - index.tsx    //- Entry point of 'electron-renderer'
@@ -133,8 +117,8 @@ electron-react-typescript-base-proj/
 
 ## Author
 
-[Wing Chau](https://github.com/iamWing) [@Devtography](https://github.com/Devtography)
+[Saeed Heidari](https://github.com/espitman) [@Devtography](https://github.com/espitman)
 
 ## License
-Electron React TypeScript Webpack Boilerplate is open source software 
+Electron React TypeScript Webpack Kit is open source software 
 [licensed as MIT](LICENSE).
