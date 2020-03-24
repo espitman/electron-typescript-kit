@@ -11,6 +11,11 @@
     "build:win": "electron-builder build --win --x64",
     "build:mac": "electron-builder build --mac --x64"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
   "build": {
     "appId": "ir.boum.electron_kit",
     "productName": "Electron+React+TypeScript Kit",
@@ -54,8 +59,11 @@
     "eslint-plugin-react": "^7.17.0",
     "file-loader": "^2.0.0",
     "html-webpack-plugin": "^3.2.0",
+    "husky": "^4.2.3",
     "lodash": "^4.17.15",
     "mocha": "^5.2.0",
+    "prettier": "2.0.2",
+    "pretty-quick": "^2.0.1",
     "rimraf": "^2.7.1",
     "source-map-loader": "^0.2.4",
     "spectron": "^5.0.0",
