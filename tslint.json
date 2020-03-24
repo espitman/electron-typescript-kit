@@ -1,11 +1,23 @@
 {
   "defaultSeverity": "error",
   "extends": [
-    "tslint:recommended",
-    "tslint-microsoft-contrib"
+    "tslint:recommended"
   ],
   "jsRules": {},
   "rules": {
+    "indent": [true, "spaces", 2],
+    "semicolon": [true, "never"],
+    "trailing-comma": [true, { "multiline": "never", "singleline": "never" }],
+    "quotemark": [true, "single"],
+    "member-access": [false],
+    "ordered-imports": [false],
+    "max-line-length": [true, 150],
+    "member-ordering": [false],
+    "interface-name": [false],
+    "arrow-parens": false,
+    "object-literal-sort-keys": false,
+    "variable-name": [true, "allow-snake-case", "allow-pascal-case"],
+    "max-classes-per-file": [true, 5],
     "align": [true, "statements", "members", "elements"],
     "export-name": [
       true,
@@ -13,7 +25,6 @@
         "ignore-case": true
       }
     ],
-    "max-line-length": [true, 80],
     "no-any": false,
     "no-submodule-imports": false,
     "no-implicit-dependencies": [
