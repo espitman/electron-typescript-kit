@@ -4,6 +4,7 @@ import { About } from './screen/about'
 
 interface State {
   url?: string
+  params?: any
 }
 
 interface Props {
@@ -28,20 +29,20 @@ export class Router extends React.Component<Props, State> {
   }
 
   navigation = {
-    go: (url: string) => {
-      this.setState({ url })
+    go: (url: string, params: any = {}) => {
+      this.setState({ url, params })
     }
   }
 
   render() {
-    const { url } = this.state
+    const { url, params = {} } = this.state
     const Component =
       components[
         (url as string).charAt(0).toUpperCase() + (url as string).substring(1)
       ]
     return (
       <div className="app">
-        <Component navigation={this.navigation} />
+        <Component navigation={this.navigation} params={params} />
       </div>
     )
   }

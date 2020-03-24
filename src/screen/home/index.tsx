@@ -2,7 +2,7 @@ import * as React from 'react'
 
 export class Home extends React.Component<any> {
   handleClick = () => {
-    this.props.navigation.go('about')
+    this.props.navigation.go('about', { name: 'saeed' })
   }
 
   render() {
